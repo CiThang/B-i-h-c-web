@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thẻ  ul, ol, li</title>
+</head>
+<body>
+    <!-- 
+    8. ul - ul-ordered list - danh sách không có thứ tự 
+    9. ol - ordered list - danh sách có thứ tự
+    10.li - list item - là thẻ con trực tiếp của ul và ol
+    -->
+
+    <!--
+     Thẻ ul : danh sách không có thứ tự 
+    Sử dụng kết hợp với các thẻ con để liệt kê danh sách
+     -->
+     <h2> Thẻ ul </h2>
+     <h3>
+         <ul>
+             <li>Item 1</li>
+             <li>Item 2</li>
+             <li>Item 3</li>
+         </ul>
+     </h3>
+    <!-- 
+     Thẻ ol : danh sách có thứ tự 
+     Sử dụng kết hợp với các thẻ con để liệt kê danh sách 
+    -->
+    <h2> Thẻ ol </h2>
+    <h3>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 1</li>
+            <li>Item 1</li>
+        </ol>
+    </h3>
+
+    <!-- ul>li*5 : tạo 5 thẻ li trong thẻ ul 
+        thẻ ol cũng có thể làm được như tương tự
+    -->
+    <h2> Các ví dụ </h2>
+    <h3>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    
+        <!-- ul>li*5{item$} : tự tạo 5 list có nội dung là "item" 
+         thẻ ol cũng có thể làm được như tương tự
+        -->
+        <ul>
+            <li>irtem1</li>
+            <li>irtem2</li>
+            <li>irtem3</li>
+            <li>irtem4</li>
+            <li>irtem5</li>
+        </ul>
+    </h3>
+
+    <h2> Các thuộc tính thẻ ol </h2>
+    <!-- Thẻ ol có 2 thuộc tín có thể dùng -->
+    <h3> Thuộc tính bình thường </h3>
+    <h4>
+        <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
+    </h4>
+
+    <h3> Thuộc tính sắp xếp từ lớn đến bé</h3>
+    <h4>
+        <ol reversed>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
+    </h4>
+
+    <h3> Thuộc sinh thay đổi kiểu đếm</h3>
+    <h4>
+        <ol type="I"> 
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
+    </h4>
+
+   <h2> Thẻ ol, ul, il lồng nhau </h2>
+   <ul>
+    <li>Menu item 1</li>
+    <li>Menu item 2
+        <ol type="I">
+            <li>menu item 2.1</li>
+            <li>menu item 2.2
+                <ol>
+                    <li>menu item 2.2.1</li>
+                    <li>menu item 2.2.2</li>
+                    <li>menu item 2.2.3</li>
+                </ol>
+            </li>
+            <li>menu item 2.3</li>
+            <li>menu item 2.4</li>
+        </ol>
+    </li>
+    <li>Menu item 3</li>
+    <li>Menu item 4</li>
+   </ul>
+
+</body>
+</html>
